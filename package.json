@@ -1,0 +1,22 @@
+{
+  "name": "notes-merger",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Notes Merger desktop app built with Rust and Tauri.",
+  "type": "commonjs",
+  "scripts": {
+    "serve": "node server.js",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  },
+  "dependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "mammoth": "^1.12.0",
+    "pdfjs-dist": "^6.1.200",
+    "tesseract.js": "^7.0.0"
+  }
+}

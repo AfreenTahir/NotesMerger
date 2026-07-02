@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+.cargo-home/
+src-tauri/target/
+chrome-profile/
+edge-profile/
+*.log
+Downloads/
+logoooooooooooo.png
