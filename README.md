@@ -36,13 +36,13 @@ Notes Merger is a Rust + Tauri desktop app for students. Drop in class material,
 The Windows installer is published on GitHub Releases:
 
 ```text
-Notes Merger_0.1.0_x64-setup.exe
+Notes.Merger_0.1.0_x64-setup.exe
 ```
 
-Release page:
+Direct download:
 
 ```text
-https://github.com/AfreenTahir/NotesMerger/releases
+https://github.com/AfreenTahir/NotesMerger/releases/download/v0.1.0/Notes.Merger_0.1.0_x64-setup.exe
 ```
 
 ## Run Locally
