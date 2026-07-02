@@ -1,21 +1,51 @@
-# Notes Merger
+<p align="center">
+  <img src="frontend/assets/logo.svg" alt="Notes Merger logo" width="112" />
+</p>
 
-Notes Merger is a Tauri desktop app for students who need to organize messy PDFs, screenshots, Word documents, and text notes into course folders and searchable topic sections.
+<h1 align="center">Notes Merger</h1>
 
-## Current desktop prototype
+<p align="center">
+  Turn messy PDFs, screenshots, Word docs, and rough notes into clean exam-ready study notes.
+</p>
 
-- Rust/Tauri desktop shell in `src-tauri`
-- Static app UI in `frontend`
-- Drag-and-drop and file picker import
-- Local PDF text extraction
-- Local OCR for screenshots and scanned PDF pages
-- Local DOCX and TXT reading
-- Generated study notes with key points, terms, source highlights, review questions, copy, and download
-- Course/topic navigation
-- Searchable document table
-- Document inspector with merge summary, tags, and product roadmap
+<p align="center">
+  <a href="https://github.com/AfreenTahir/NotesMerger/releases">Download Installer</a>
+  ·
+  <a href="#features">Features</a>
+  ·
+  <a href="#run-locally">Run Locally</a>
+</p>
 
-## Run locally
+## What It Does
+
+Notes Merger is a Rust + Tauri desktop app for students. Drop in class material, pick a course/topic, and the app extracts readable text, organizes it, and creates revision-friendly notes.
+
+## Features
+
+- Drag and drop PDFs, screenshots, DOCX, TXT, and Markdown notes.
+- Extract selectable text from PDFs.
+- OCR screenshots and scanned PDF pages locally.
+- Generate structured study notes with headings, key points, terms, questions, and cheat sheets.
+- Create flashcards and study-set questions from imported material.
+- Organize files into course folders and topic workspaces.
+- Copy or download generated notes.
+- Runs as a Windows desktop app.
+
+## Download
+
+The Windows installer is published on GitHub Releases:
+
+```text
+Notes Merger_0.1.0_x64-setup.exe
+```
+
+Release page:
+
+```text
+https://github.com/AfreenTahir/NotesMerger/releases
+```
+
+## Run Locally
 
 Install dependencies:
 
@@ -37,18 +67,19 @@ npm.cmd run build
 
 If PowerShell blocks `npm`, use `npm.cmd` as shown above.
 
-## Product plan
+## Tech Stack
 
-1. Import: accept PDFs, screenshots, DOCX, TXT, Markdown, and pasted notes.
-2. Extract: parse documents and run OCR on screenshots/scans.
-3. Organize: detect course names, topic headings, tags, duplicates, and weak file names.
-4. Merge: combine related notes into clean topic sections with source citations.
-5. Study: add search, summaries, flashcards, quizzes, and exportable study packs.
-6. Sync: add accounts, cloud storage, collaboration, and cross-device sync.
+- Rust
+- Tauri
+- HTML, CSS, JavaScript
+- PDF.js for PDF text extraction
+- Tesseract.js for OCR
+- Mammoth for DOCX text extraction
 
-## Next implementation steps
+## Roadmap
 
-- Add Tauri file-drop events for native desktop drag-and-drop.
-- Store imported file metadata in a local SQLite database.
-- Add a Rust command layer for faster document parsing and indexing.
-- Add course/topic creation flows and persistent search.
+- Improve scanned-PDF OCR speed and quality.
+- Add persistent local storage for courses and notes.
+- Add richer course/topic management.
+- Add optional AI API mode for higher-quality study notes.
+- Add exports to PDF, DOCX, and Anki-style flashcards.
